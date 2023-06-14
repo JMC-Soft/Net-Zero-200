@@ -3,8 +3,13 @@
 ## epic branch 전략
 
  - develop : 버그가 수정되지 않은 배포 가능한 상태
- - epic : 본인이 담당할 독립적인 기능
+ - epic : 본인이 담당할 독립적인 기능   
  - feat : 독립적인 기능 중 아주 작은 단위의 새로운 기능 구현
+
+```text
+ex) epic/back-build-db
+ex) feat/back-build-db-user
+```
 
 
 ## Commit Convention
