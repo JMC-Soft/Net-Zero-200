@@ -1,7 +1,11 @@
 # Net-Zero-200
 
-### main 브랜치 배포 현황
+### main 브랜치 배포
 [https://net-zero-200.vercel.app/](https://net-zero-200.vercel.app/)
+
+
+### develop 브랜치 배포
+[https://net-zero-200-git-develop-jmcsoft.vercel.app/](https://net-zero-200-git-develop-jmcsoft.vercel.app/)
 
 ## epic branch 전략
 
