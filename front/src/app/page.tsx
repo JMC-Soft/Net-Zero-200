@@ -31,7 +31,7 @@ const links = [
 
 export default function Home() {
   return (
-    <div className=" mx-auto my-auto grid h-5/6 w-5/6 grid-cols-3">
+    <div className="mx-auto my-auto grid h-screen w-5/6 grid-cols-3">
       {links.map(({ href, label, bgColorStart, hoverColor }) => (
         <div
           key={href}
