@@ -1,5 +1,8 @@
 # Net-Zero-200
 
+### main 브랜치 배포 현황
+[https://net-zero-200.vercel.app/](https://net-zero-200.vercel.app/)
+
 ## epic branch 전략
 
  - develop : 버그가 수정되지 않은 배포 가능한 상태
