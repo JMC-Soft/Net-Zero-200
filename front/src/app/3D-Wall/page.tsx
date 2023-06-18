@@ -1,5 +1,5 @@
-import Wall from '@/app/3D-Wall/components/Wall';
 import React from 'react';
+import Wall from '@/app/3D-Wall/components/Wall';
 import House from '@/app/3D-Wall/components/House';
 import Stage from '@/app/3D-Wall/components/Stage';
 

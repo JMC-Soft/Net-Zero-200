@@ -1,5 +1,3 @@
-// localStorageUtils.ts
-
 export const saveToLocalStorage = (key: string, value: number): void => {
   try {
     window.localStorage.setItem(key, value.toString());
