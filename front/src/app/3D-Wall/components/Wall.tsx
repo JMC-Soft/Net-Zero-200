@@ -16,7 +16,6 @@ function Wall({ direction = 'front', className, children }: Props) {
         {
           'rotate-90--translate-z-500 w-[1000vw] bg-white/90 ':
             direction === 'left',
-
           'rotate-90--translate-z-400 w-[1000vw] bg-white/90':
             direction === 'right',
           'w-screen': direction === 'front',
