@@ -16,6 +16,14 @@
 }
 
 @layer components {
+  .rotate-90--translate-z-500 {
+    transform: rotateY(90deg) translateZ(-500vw);
+  }
+
+  .rotate-90--translate-z-400 {
+    transform: rotateY(90deg) translateZ(-400vw);
+  }
+
   .character-head {
     left: calc(42 / 856 * 100%);
     top: 0;
@@ -67,6 +75,13 @@
     height: calc(300 / 1334 * 100%);
     transform-origin: center top;
   }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 11vmin));
+    grid-template-rows: repeat(7, minmax(0, 11vmin));
+    transform: rotateX(60deg) rotateZ(20deg);
+  }
 }
 
 @layer utilities {
@@ -76,6 +91,10 @@
 
   .center {
     @apply flex items-center justify-center;
+  }
+
+  .perspective-2000 {
+    perspective: 2000px;
   }
 
   .perspective-1000 {
@@ -132,13 +151,5 @@
 
   .preserve-3d {
     transform-style: preserve-3d;
-  }
-
-  .rotate-90--translate-z-500 {
-    transform: rotateY(90deg) translateZ(-500vw);
-  }
-
-  .rotate-90--translate-z-400 {
-    transform: rotateY(90deg) translateZ(-400vw);
   }
 }
