@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import { Navbar } from 'flowbite-react';
 import Logo from '$/images/logos/main.png';
 import IconBrown from '$/images/icons/main_brown.png';
 import Avatar from '@/components/ui/Avatar';
-import { Navbar } from 'flowbite-react';
 
 export default function Navigation() {
   return (

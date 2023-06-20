@@ -1,12 +1,12 @@
 'use client';
 
-import { Navbar } from 'flowbite-react';
 import {
   ClipboardIcon,
   DocumentTextIcon,
   HomeIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
+import { Navbar } from 'flowbite-react';
 
 const NAV_LINKS = [
   {
