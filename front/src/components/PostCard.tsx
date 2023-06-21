@@ -7,7 +7,7 @@ import {
 } from '@heroicons/react/24/outline';
 import React from 'react';
 import { StaticImageData } from 'next/image';
-import Avatar from '@/ui/Avatar';
+import Avatar from '@/components/ui/Avatar';
 
 type Props = {
   imgSrc: string | StaticImageData;

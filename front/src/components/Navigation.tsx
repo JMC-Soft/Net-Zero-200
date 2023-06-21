@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { BellIcon } from '@heroicons/react/24/outline';
 import Logo from '$/logos/main.png';
 import IconBrown from '$/icons/main_brown.png';
-import Avatar from '@/ui/Avatar';
+import Avatar from '@/components/ui/Avatar';
 
 export default function Navigation() {
   return (

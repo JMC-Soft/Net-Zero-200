@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import SectionTitle from '@/ui/Section/SectionTitle';
-import SectionList from '@/ui/Section/SectionList';
+import SectionTitle from '@/components/ui/Section/SectionTitle';
+import SectionList from '@/components/ui/Section/SectionList';
 
 type Props = {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
 import React from 'react';
 import RecipeCard from '@/components/RecipeCard';
 import RecipeImage from '$/temp/recipe.jpg';
-import Section from '@/ui/Section/Section';
+import Section from '@/components/ui/Section/Section';
 
 function HotRecipeSection() {
   return (

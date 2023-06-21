@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '@/ui/Section/Section';
+import Section from '@/components/ui/Section/Section';
 import Restaurant from '$/temp/restaurant.jpg';
 import RestaurantCard from '@/components/RestaurantCard';
 

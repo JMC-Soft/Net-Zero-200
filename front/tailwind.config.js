@@ -11,12 +11,11 @@ module.exports = {
       tablet: '640px',
       laptop: '1024px',
       desktop: '1280px',
-
     },
     extend: {
       fontFamily: {
-        pacifico: "var(--pacifico)",
-        notoSansKR: "var(--noto-sans-kr)"
+        pacifico: 'var(--pacifico)',
+        notoSansKR: 'var(--noto-sans-kr)',
       },
       colors: {
         primary: {
@@ -69,5 +68,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('flowbite/plugin'), require('tailwind-scrollbar-hide')],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

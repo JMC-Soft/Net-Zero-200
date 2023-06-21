@@ -1,6 +1,6 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Card from '@/ui/Card/Card';
+import Card from '@/components/ui/Card/Card';
 
 type Props = {
   label: string;
