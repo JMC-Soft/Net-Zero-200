@@ -1,12 +1,25 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Pacifico } from 'next/font/google';
 import React from 'react';
+import clsx from 'clsx';
+import Navigation from '@/components/Navigation';
+import AppBar from '@/components/AppBar';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--inter' });
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--pacifico',
+});
+const notoSansKR = Inter({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--noto-sans-kr',
+});
 
 export const metadata = {
-  title: 'Net-Zero 해커톤',
-  description: '우승합니다.',
+  title: 'Ve green | 비그린',
+  description: '환경',
 };
 
 export default function RootLayout({
@@ -16,7 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(inter.variable, pacifico.variable, notoSansKR.variable)}
+      >
+        <Navigation />
+        {children}
+        <AppBar />
+      </body>
     </html>
   );
 }
