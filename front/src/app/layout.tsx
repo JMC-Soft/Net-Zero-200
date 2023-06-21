@@ -1,10 +1,21 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, Pacifico } from 'next/font/google';
 import React from 'react';
-import Navigation from '@/components/ui/Navigation';
-import AppBar from '@/components/ui/AppBar';
+import clsx from 'clsx';
+import Navigation from '@/components/Navigation';
+import AppBar from '@/components/AppBar';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--inter' });
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--pacifico',
+});
+const notoSansKR = Inter({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--noto-sans-kr',
+});
 
 export const metadata = {
   title: 'Ve green | 비그린',
@@ -18,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
+      <body
+        className={clsx(inter.variable, pacifico.variable, notoSansKR.variable)}
+      >
         <Navigation />
         {children}
         <AppBar />

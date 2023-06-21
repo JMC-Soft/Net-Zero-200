@@ -7,7 +7,7 @@ import {
 } from '@heroicons/react/24/outline';
 import React from 'react';
 import { StaticImageData } from 'next/image';
-import Avatar from '@/components/ui/Avatar';
+import Avatar from '@/ui/Avatar';
 
 type Props = {
   imgSrc: string | StaticImageData;
@@ -40,7 +40,7 @@ const BUTTONS = [
 
 function PostCard({ imgSrc, title, content, author, date, like, save }: Props) {
   return (
-    <section className="my-1 flex flex-col gap-y-3 border bg-white px-4 pt-4 text-sm">
+    <section className="flex flex-col gap-y-3 border bg-white px-4 pt-4">
       <div className="flex h-10 items-center justify-between">
         <div className="flex h-full items-center gap-x-3">
           <Avatar src={imgSrc} alt="프로필 사진" />
