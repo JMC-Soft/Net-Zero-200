@@ -35,9 +35,8 @@ export default function AppBar() {
   return (
     <Navbar fluid rounded className="mt-auto">
       {NAV_LINKS.map(({ href, icon, label }) => (
-        <div className="w-1/4">
+        <div key={label} className="w-1/4">
           <Navbar.Link
-            key={label}
             href={href}
             className="flex flex-col items-center gap-y-2 text-sm"
           >
