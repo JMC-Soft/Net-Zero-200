@@ -17,7 +17,11 @@ function HotRecipeSection() {
         {Array(10)
           .fill(0)
           .map(() => (
-            <RecipeCard imgSrc={RecipeImage} label="라따뚜이" />
+            <RecipeCard
+              key={Math.random()}
+              imgSrc={RecipeImage}
+              label="라따뚜이"
+            />
           ))}
       </Section.List>
     </Section>

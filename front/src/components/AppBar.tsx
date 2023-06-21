@@ -1,4 +1,4 @@
- import {
+import {
   ClipboardIcon,
   DocumentTextIcon,
   HomeIcon,
