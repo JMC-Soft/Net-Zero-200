@@ -7,8 +7,8 @@ import AppBar from '@/components/ui/AppBar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Net-Zero 해커톤',
-  description: '우승합니다.',
+  title: 'Ve green | 비그린',
+  description: '환경',
 };
 
 export default function RootLayout({

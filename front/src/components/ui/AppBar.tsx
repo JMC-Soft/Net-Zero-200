@@ -6,45 +6,44 @@ import {
   HomeIcon,
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline';
-import { Navbar } from 'flowbite-react';
+import Link from 'next/link';
 
 const NAV_LINKS = [
   {
     href: '#',
-    icon: <HomeIcon className="w-8" />,
+    Icon: HomeIcon,
     label: '홈',
   },
   {
     href: '#',
-    icon: <DocumentTextIcon className="w-8" />,
+    Icon: DocumentTextIcon,
     label: '레시피',
   },
   {
     href: '#',
-    icon: <ClipboardIcon className="w-8" />,
+    Icon: ClipboardIcon,
     label: '식당 검색',
   },
   {
     href: '#',
-    icon: <MagnifyingGlassIcon className="w-8" />,
+    Icon: MagnifyingGlassIcon,
     label: '음식 검색',
   },
 ];
 
 export default function AppBar() {
   return (
-    <Navbar fluid rounded className="mt-auto">
-      {NAV_LINKS.map(({ href, icon, label }) => (
-        <div key={label} className="w-1/4">
-          <Navbar.Link
-            href={href}
-            className="flex flex-col items-center gap-y-2 text-sm"
-          >
-            {icon}
-            <span>{label}</span>
-          </Navbar.Link>
-        </div>
+    <ul className="fixed bottom-0 flex w-full border-t bg-white ">
+      {NAV_LINKS.map(({ href, Icon, label }) => (
+        <Link
+          href={href}
+          key={label}
+          className="flex h-16 flex-1 flex-col items-center justify-evenly text-sm"
+        >
+          <Icon className="h-7" />
+          <span>{label}</span>
+        </Link>
       ))}
-    </Navbar>
+    </ul>
   );
 }

@@ -8,13 +8,14 @@ type Props = {
 
 function Avatar({ src, alt }: Props) {
   return (
-    <div className="h-12 rounded-full bg-gray-200 p-3">
+    <div className="aspect-square h-full rounded-full bg-gray-300 p-1.5">
       <Image
         src={src}
         alt={alt}
         style={{
-          width: '100%',
           height: '100%',
+          objectPosition: 'center',
+          objectFit: 'contain',
         }}
       />
     </div>
