@@ -1,6 +1,6 @@
-package com.jmcsoft.vegreen.async.controller;
+package com.jmcsoft.vegreen.domain.async.controller;
 
-import com.jmcsoft.vegreen.async.service.AsyncService;
+import com.jmcsoft.vegreen.domain.async.service.AsyncService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
