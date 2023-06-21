@@ -11,7 +11,7 @@
 
   html,
   body {
-    @apply h-screen w-full flex flex-col;
+    @apply flex h-screen w-full flex-col bg-gray-200;
   }
 }
 
