@@ -17,9 +17,9 @@ public class UserController {
 
     private final UserService userService;
 
-    @GetMapping("/user/{nickname}")
-    public ResponseEntity<UserResponse> getUserByNickname(@PathVariable String nickname) {
-        User user = userService.findByNickname(nickname);
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<UserResponse> getUserByNickname(@PathVariable String userId) {
+        User user = userService.findByUserId(userId);
         return ResponseEntity.ok(new UserResponse(user));
     }
 }
