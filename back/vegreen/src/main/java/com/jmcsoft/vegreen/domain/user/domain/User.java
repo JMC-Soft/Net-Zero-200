@@ -32,6 +32,9 @@ public class User {
     @Column(name = "nickname", nullable = false, unique = true, length = 30)
     private String nickname;
 
+    @Column(name = "profile_image_url")
+    private String profileImageUrl;
+
     @CreatedDate
     @Column(name = "created_at")
     private LocalDateTime createdAt;
@@ -41,10 +44,11 @@ public class User {
     private LocalDateTime updatedAt;
 
     @Builder
-    public User(String userId, String email, String password, String nickname) {
+    public User(String userId, String email, String password, String nickname, String profileImageUrl) {
         this.userId = userId;
         this.email = email;
         this.password = password;
         this.nickname = nickname;
+        this.profileImageUrl = profileImageUrl;
     }
 }
