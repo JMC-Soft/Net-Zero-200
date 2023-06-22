@@ -20,16 +20,16 @@ public class User {
     @Column(name = "id", updatable = false)
     private Long id;
 
-    @Column(name = "user_id", nullable = false, unique = true)
+    @Column(name = "user_id", nullable = false, unique = true, length = 30)
     private String userId;
 
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = true, length = 60)
     private String email;
 
-    @Column(name = "password")
+    @Column(name = "password", nullable = false, length = 100)
     private String password;
 
-    @Column(name = "nickname", unique = true)
+    @Column(name = "nickname", nullable = false, unique = true, length = 30)
     private String nickname;
 
     @CreatedDate
