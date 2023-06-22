@@ -1,4 +1,4 @@
-package com.jmcsoft.vegreen.web.controller;
+package com.jmcsoft.vegreen.domain.web.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

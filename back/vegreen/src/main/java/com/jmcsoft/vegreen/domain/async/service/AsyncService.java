@@ -1,4 +1,4 @@
-package com.jmcsoft.vegreen.async.service;
+package com.jmcsoft.vegreen.domain.async.service;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
